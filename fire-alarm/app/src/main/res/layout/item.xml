@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_3sdp">
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:id="@+id/cell_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lynxWhite"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <FrameLayout
+            android:id="@+id/cell_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_item_alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/alarm"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="normal"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/txt_item_wire_break"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+
+                    android:text="@string/wire_break"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="normal"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/txt_item_fault"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/fault"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="normal"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_75sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/txt_item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/system_normal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_23sdp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/txt_item_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/room_address"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="normal"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.ramotion.foldingcell.FoldingCell>
+
+
+</com.google.android.material.card.MaterialCardView>

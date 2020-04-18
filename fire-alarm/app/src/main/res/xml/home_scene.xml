@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition
+        android:id="@+id/transition_home"
+        app:autoTransition="animateToEnd"
+        app:constraintSetStart="@+id/home_start"
+        app:constraintSetEnd="@id/home_end"
+        app:duration="2000"/>
+
+    <ConstraintSet android:id="@+id/home_start">
+        <Constraint android:id="@+id/card_header">
+            <Layout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_300sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+            <PropertySet android:alpha="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/card_alarm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:alpha="0"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_header" />
+        <Constraint
+            android:id="@+id/card_wire_break"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:alpha="0"
+           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/card_header"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <Constraint
+            android:id="@+id/card_fault"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:alpha="0"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_header" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/home_end">
+        <Constraint android:id="@+id/card_header">
+            <Layout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_300sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+            <PropertySet android:alpha="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/card_alarm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:alpha="1"
+            app:layout_constraintEnd_toStartOf="@+id/card_wire_break"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_header" />
+        <Constraint
+            android:id="@+id/card_wire_break"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:alpha="1"
+            app:layout_constraintEnd_toStartOf="@+id/card_fault"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/card_alarm"
+            app:layout_constraintTop_toBottomOf="@id/card_header" />
+        <Constraint
+            android:id="@+id/card_fault"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:alpha="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/card_wire_break"
+            app:layout_constraintTop_toBottomOf="@id/card_header" />
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            tools:context=".AboutActivity">
+
+            <ImageView
+                android:id="@+id/logoapp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/fire_alarm" />
+
+            <TextView
+                android:id="@+id/firealarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logoapp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firealarm"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Version 1.3.3"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/intro1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/version"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:text="@string/about_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/intro3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="A key aspect of fire protection is to identify a developing fire emergency in a timely manner, and to alert the building's occupants and fire emergency organizations. This is the role of my fire detection and alarm systems app. "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/intro4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="I am frequently supported by my awesome teacher: Mr Lê Trọng Nghĩa, and many friends like: Nguyễn Văn Tân, Trần Quang Tuấn, Phạm Quang Khải, Nguyễn Viết Thanh,... I give my best appreciate to them. "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/intro5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Finally, I really happy to have you here and enjoying my app. "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/intro6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Contact Me"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circlebutton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circlebutton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_019_youtube"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@id/imageButton3"
+        app:layout_constraintStart_toEndOf="@id/imageButton1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circlebutton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_008_linkedin"
+        app:layout_constraintStart_toEndOf="@id/imageButton2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

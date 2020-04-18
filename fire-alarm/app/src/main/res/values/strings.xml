@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Fire Alarm </string>
+    <string name="menu_home">Home</string>
+    <string name="menu_room">Room</string>
+    <string name="menu_map">Map</string>
+    <string name="msg_token_fmt">sda</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="LinkstoFirebaseAnalytics">
+    <a href="https://firebase.google.com/policies/analytics">Firebase Analytics</a>
+    </string>
+    <string name="LinkstoArduinoPrivacy">
+    <a href="https://www.arduino.cc/PrivacyPolicy/en/">Arduino Privacy</a>
+    </string>
+    <string name="LinkstoHoringPrivacy">
+    <a href="http://www.horinglih.com/about.html">Horing ltd Profile</a>
+    </string>
+    <string name="LinkstoGmail">
+    <a href="https://mail.google.com/mail/u/0/?pli=1#inbox">16142002@student.hcmute.edu.vn</a>
+    </string>
+
+    <string name="system_normal">SYSTEM IS ON NORMAL</string>
+    <string name="system_error">SYSTEM IS ON FIRE</string>
+    <string name="alarm">Alarm: </string>
+    <string name="wire_break">Wire-Break: </string>
+    <string name="fault">Fault: </string>
+    <string name="floor_address">Floor Address: </string>
+    <string name="room_address">Room Address: </string>
+    <string name="about_title"> I started with one mission: <b>Alarm People On Fire </b></string>
+
+
+</resources>
